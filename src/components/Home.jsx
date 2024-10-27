@@ -63,17 +63,15 @@ const Home = () => {
             </button>
           </ul>
 
-
-            
-          <div className="flex items-center space-x-2 mt-5">
+          {/* Main Search Bar hidden on mobile */}
+          <div className="hidden sm:flex items-center space-x-2 mt-5">
             <AiOutlineSearch className="text-xl cursor-pointer text-white" />
             <input
               className="bg-inherit border-b outline-0 border-gray-300 p-1 w-full text-white"
               type="text"
               placeholder="Search"
             />
-          </div>     
-
+          </div>
 
           {/* Hamburger Icon for mobile */}
           <div className="sm:hidden">
@@ -99,15 +97,14 @@ const Home = () => {
           <ul className="flex flex-col space-y-5 font-bold cursor-pointer text-gray-300">
             <li className="hover:text-white">Home</li>
             <li className="hover:text-white">Popular</li>
-            {/* <li className="hover:text-white"><Link to="popular" spy={true} smooth={true} offset={50} duration={500}>Popular</Link></li>
-             */}
             <li className="hover:text-white">Explore</li>
             <li onClick={openLoginModal} className="hover:text-white">
               Login
             </li>
           </ul>
 
-          <div className="flex items-center space-x-2 mt-5">
+          {/* Sidebar Search Bar for mobile */}
+          <div className="block sm:hidden flex items-center space-x-2 mt-5">
             <AiOutlineSearch className="text-xl cursor-pointer text-white" />
             <input
               className="bg-inherit border-b outline-0 border-gray-300 p-1 w-full text-white"
@@ -196,10 +193,10 @@ const Home = () => {
           <h2 className="text-2xl font-bold cursor-default">D I S C O V E R</h2>
           <h1 className="text-5xl font-bold cursor-default">T R I P</h1>
           <p className="mx-10 text-gray-400 cursor-default">
-            Discover new destinations with ease using TripNest. Plan, book,
-            and explore your dream trips with personalized recommendations,
-            real-time updates, and seamless navigation—your ultimate travel
-            companion for every adventure.
+            Discover new destinations with ease using TripNest. Plan, book, and
+            explore your dream trips with personalized recommendations, real-time
+            updates, and seamless navigation—your ultimate travel companion for
+            every adventure.
           </p>
         </div>
 
